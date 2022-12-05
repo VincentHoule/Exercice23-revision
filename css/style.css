@@ -1,0 +1,70 @@
+:root{
+--couleur-background:#282c34;
+--couleur-texte:#e3e7ed;
+--couleur-texte-bleu:#169fe3;
+--couleur-background-bouton:#3c3f49;
+--couleur-background-bouton-select:	rgba(22,159,227,0.7);
+--couleur-background-bouton-hover:#3794c3;
+}
+@font-face{
+    font-family: 'text1';
+    src: url("../webfonts/Maximum-Impact.ttf");
+}
+
+body{
+    background-color: var(--couleur-background);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+#LDL{
+    color: var(--couleur-texte);
+    font-family: 'text1';
+}
+#FDL{
+    color: var(--couleur-texte);
+}
+#PAM{
+    color: var(--couleur-texte-bleu);
+}
+
+#partieG{
+    grid-column: 1;
+}
+#partieD{
+    grid-column: 2;
+}
+.btn{
+    background-color: var(--couleur-background-bouton);
+    border-radius: 15px;
+    color: #e3e7ed;
+    border: none;
+    padding: 8px;
+    
+}
+.btn:hover{
+    background-color: var(--couleur-background-bouton-hover);
+    
+}
+#livreSection{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.livre{
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    color: var(--couleur-texte);
+    width: 250px;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+}
+.livre:hover{
+    border: solid var(--couleur-background-bouton-hover);
+    box-shadow: 0px 0px 20px var(--couleur-background-bouton-hover);
+}
