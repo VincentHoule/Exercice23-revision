@@ -8,6 +8,7 @@
 }
 @font-face{
     font-family: 'text1';
+    
     src: url("../webfonts/Maximum-Impact.ttf");
 }
 
@@ -23,6 +24,7 @@ body{
 }
 #LDL{
     color: var(--couleur-texte);
+    letter-spacing: .2rem;
     font-family: 'text1';
 }
 #FDL{
@@ -34,9 +36,13 @@ body{
 
 #partieG{
     grid-column: 1;
+    display: flex;
+    flex-direction: column;
 }
 #partieD{
     grid-column: 2;
+    padding-left: 50px;
+    padding-right: 220px;
 }
 .btn{
     background-color: var(--couleur-background-bouton);
@@ -44,10 +50,12 @@ body{
     color: #e3e7ed;
     border: none;
     padding: 8px;
-    
+    transition: all 0.2s;
 }
 .btn:hover{
-    background-color: var(--couleur-background-bouton-hover);
+    background-color: var(--couleur-texte);
+    color: var(--couleur-background-bouton);
+    cursor: pointer;
     
 }
 #livreSection{
@@ -67,4 +75,119 @@ body{
 .livre:hover{
     border: solid var(--couleur-background-bouton-hover);
     box-shadow: 0px 0px 20px var(--couleur-background-bouton-hover);
+    cursor: pointer;
+}
+#MDA{
+    font-family: 'text1';
+    letter-spacing: .2rem;
+    color: var(--couleur-texte);
+}
+#lorem{
+    color: var(--couleur-texte);
+}
+#texteIcone{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5px;
+}
+.group{
+    font-size: 0.70em;
+    color: var(--couleur-texte);
+}
+.icone{
+    font-size: 1.8em;
+}
+#money{
+    grid-row: 1;
+    grid-column: 1;
+}
+#venteTotal{
+    grid-row: 1;
+    grid-column: 2;
+}
+#book{
+    grid-row: 2;
+    grid-column: 1;
+}
+#papier{
+    grid-row: 2;
+    grid-column: 2;
+}
+#association{
+    border: solid 4px var(--couleur-background-bouton);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 25px;
+
+
+}
+#coeur{
+    color: var(--couleur-texte-bleu);
+    margin-right: 30px;
+    margin-top: 20px;
+    position: absolute;
+
+}
+#texte{
+    color: var(--couleur-texte);
+    
+}
+#VDP{
+    color: var(--couleur-texte);
+}
+#PMP{
+    color: var(--couleur-texte);
+}
+#sectionBTN{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+}
+.btn2{
+    background-color: var(--couleur-background-bouton);
+    color: var(--couleur-texte);
+    height: 50px;
+    width: 99px;
+
+    border: none;
+    transition: all 0.2s;
+}
+.btn2:hover{
+    background-color: var(--couleur-background-bouton-hover);
+    cursor: pointer;
+}
+.btn2:active{
+    background-color: var(--couleur-background-bouton-select);
+    border: solid 3px var(--couleur-texte-bleu);
+}
+#ptiBoite{
+    display: flex;
+    height: 50px;
+    color: var(--couleur-texte);
+    background-color: var(--couleur-background-bouton);
+    width: 50px;
+    align-items: center;
+    justify-content: center;    
+}
+#AutreMontant{
+    width: 250px;
+    height: 50px;
+    background-color: var(--couleur-background-bouton);
+}
+#valid{
+    background-color: var(--couleur-texte-bleu);
+    color: var(--couleur-texte);
+    height: 50px;
+    width: 312px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+    font-family: 'text1';
+    letter-spacing: .1rem;
+}
+#valid:active{
+    background-color: var(--couleur-background-bouton-select);
 }
