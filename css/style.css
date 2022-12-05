@@ -11,7 +11,14 @@
     
     src: url("../webfonts/Maximum-Impact.ttf");
 }
+@media screen and (min-resolution:900px) {
 
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 body{
     background-color: var(--couleur-background);
     padding-left: 30px;
@@ -21,6 +28,14 @@ body{
     
     display: grid;
     grid-template-columns: 60% 40%;
+}
+@media screen and (max-width:900px) {
+
+    body{
+        display: flex!important;
+        flex-direction: column;
+    }
+
 }
 #LDL{
     color: var(--couleur-texte);
@@ -150,7 +165,7 @@ body{
     background-color: var(--couleur-background-bouton);
     color: var(--couleur-texte);
     height: 50px;
-    width: 99px;
+    width: 32%;
 
     border: none;
     transition: all 0.2s;
@@ -168,12 +183,12 @@ body{
     height: 50px;
     color: var(--couleur-texte);
     background-color: var(--couleur-background-bouton);
-    width: 50px;
+    width: 16%;
     align-items: center;
     justify-content: center;    
 }
 #AutreMontant{
-    width: 250px;
+    width: 82%;
     height: 50px;
     background-color: var(--couleur-background-bouton);
 }
@@ -181,7 +196,7 @@ body{
     background-color: var(--couleur-texte-bleu);
     color: var(--couleur-texte);
     height: 50px;
-    width: 312px;
+    width: 100%;
     border: none;
     border-radius: 5px;
     transition: all 0.2s;
