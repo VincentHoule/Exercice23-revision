@@ -68,10 +68,17 @@ body{
     transition: all 0.2s;
 }
 .btn:hover{
-    background-color: var(--couleur-texte);
-    color: var(--couleur-background-bouton);
+    background-color: var(--couleur-background-bouton-hover);
     cursor: pointer;
     
+}
+.btn:active{
+    background-color: var(--couleur-texte);
+    color: var(--couleur-background-bouton);
+}
+.btnactive{
+    background-color: var(--couleur-texte);
+    color: var(--couleur-background-bouton);
 }
 #livreSection{
     display: flex;
@@ -205,4 +212,7 @@ body{
 }
 #valid:active{
     background-color: var(--couleur-background-bouton-select);
+}
+.hidden{
+    display: none;
 }
