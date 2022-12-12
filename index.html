@@ -98,17 +98,18 @@
                 <h3 id="VDP">Valeur de 808,58$CA • Payez ce que vous voulez</h3>
                 <h5 id="PMP">Payer moins pour obtenir moins d'articles, ou payez plus pour donner plus au éditeur,
                      à Humble et aux associations carritatives</h5>
-                <div id="sectionBTN">
-                    <button class="fa-xs btn2" id="montant1">1,35$CA</button>
-                    <button class="fa-xs btn2" id="montant2">13,54$CA</button>
-                    <button class="fa-xs btn2" id="montant3">24,37$CA</button>
-                    <button class="fa-xs btn2" id="montant4">30$CA</button>
-                    <button class="fa-xs btn2" id="montant5">35$CA</button>
-                    <button class="fa-xs btn2" id="montant6">40$CA</button>
+                <form  method="post" id="sectionBTN" action=" https://mathieufrechette.ca/exercice23.php">
+                    <button onclick="montant135()" class="fa-xs btn2" id="montant1">1,35$CA</button>
+                    <button onclick="montant1354()" class="fa-xs btn2" id="montant2">13,54$CA</button>
+                    <button onclick="montant2437()" class="fa-xs btn2" id="montant3">24,37$CA</button>
+                    <button onclick="montant30()" class="fa-xs btn2" id="montant4">30$CA</button>
+                    <button onclick="montant35()" class="fa-xs btn2" id="montant5">35$CA</button>
+                    <button onclick="montant40()" class="fa-xs btn2" id="montant6">40$CA</button>
                     <div id="ptiBoite">$CA</div>
-                    <div id="AutreMontant"></div>
-                    <button id="valid">Validation</button>
-                </div>     
+                    <input onclick="actuPrix()" class="btn2" type="number" id="AutreMontant">
+                    <button onclick="envoyer()" id="valid">Validation</button>
+                    <input type="hidden" name="montant-reel" id="montant-reel" value="">
+                </form>     
             </div>
 
         </body>
